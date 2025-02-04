@@ -25,7 +25,8 @@ export default function Accordian({items}) {
     <div  className='lg:grid  grid-cols-2'>
         
         {items.map((item , index) => (
-              <div className='max-w'>
+              <div className='max-w'
+              key={index}>
                 <div className='flex justify-between py-3 items-center md:mx-20 cursor-pointer border-b '
               key={index}
              onClick={() => {handleClick(index)}}>
